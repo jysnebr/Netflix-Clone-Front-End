@@ -1,0 +1,225 @@
+.body-container {
+    min-height: calc(100vh - 50px);
+    background-color: rgb(29, 29, 29);
+}
+
+.content-container {
+    margin-left: 0px;
+}
+
+
+.content-featured-img {
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgb(29, 29, 29)), url("Images/featured-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content-featured-details {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-featured-logo {
+    width: 40%;
+}
+
+.content-featured-btn {
+    margin-top: 45px;
+}
+
+.content-featured-btn button {
+    width: 12%;
+    height: 10%;
+    margin-right: 20px;
+    padding: 10px 10px;
+    font-size: 100%;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(60, 60, 60, 0.4);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.content-featured-details p {
+    color: white;
+    margin-top: 25px;
+    width: 50%;
+    font-size: 120%;
+}
+
+.new-release-text {
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.releases-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.releases-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.releases-img {
+    width: 300px;
+    height: 175px;
+    object-fit: cover;
+    margin-right: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.releases-movie {
+    cursor: pointer;
+    position: relative;
+}
+
+.releases-movie:hover .releases-img {
+    transform: scale(1.1);
+    margin: 0px 30px;
+}
+
+.releases-movie:hover .release-des-container {
+    transform: scale(1.1);
+    margin: 0px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+.release-des-container {
+    color: white;
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.release-title {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 0px;
+}
+
+.release-des {
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 15px 0px;
+}
+
+.release-play {
+    width: 35%;
+    padding: 8px 0px;
+    margin-left: 10px;
+    background-color: rgba(60, 60, 60, 0.4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 30px 22px;
+}
+
+.content-featured1 {
+    margin-top: 100px;
+}
+
+.content-featured-img1 {
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgb(29, 29, 29)), linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0), rgb(29, 29, 29)), url("Images/featured-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content-featured-logo1 {
+    width: 30%;
+}
+
+.content-featured-btn1 {
+    margin-top: 45px;
+}
+
+.content-featured-btn1 button {
+    width: 170px;
+    height: 50px;
+    margin-right: 20px;
+    padding: 10px 10px;
+    font-size: 100%;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(60, 60, 60, 0.4);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.content-featured-details1 {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-featured-details1 p {
+    color: white;
+    margin-top: 25px;
+    width: 50%;
+    font-size: 120%;
+}
+
+/* light mode */
+
+.body-container.light {
+    background-color: white;
+}
+
+.new-release-text.light {
+    color: black;
+}
+
+.content-featured-img.light {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), white), url("Images/featured-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-featured-img1.light {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), white), linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), white), url("Images/featured-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content-container {
+        margin-left: 50px;
+    }
+}
